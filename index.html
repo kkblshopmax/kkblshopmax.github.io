@@ -86,15 +86,24 @@ footer {
     <h2>Chewing tool</h2>
     <p>improve your facial contour</p>
     <p class="price">25zł</p>
-    <button onclick="window.location.href='https://www.instagram.com/ernest_adamczykkk?igsh=MXRsNWU4MG40MHd6bg=='">
-      Kup (DM)
-    </button>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+  <input type="hidden" name="cmd" value="_xclick">
+  <input type="hidden" name="business" value="TWÓJ_EMAIL_PAYPAL">
+  <input type="hidden" name="item_name" value="Clean Hoodie – Size M">
+  <input type="hidden" name="amount" value="199.00">
+  <input type="hidden" name="currency_code" value="PLN">
+  <input type="hidden" name="no_note" value="1">
+  <input type="hidden" name="shipping" value="0">
+
+  <button type="submit">
+    Kup teraz (PayPal)
+  </button>
+    </form>
   </div>
 
 </section>
 
 <footer>
-  DM on Instagram • Fast shipping
 </footer>
 
 </body>
